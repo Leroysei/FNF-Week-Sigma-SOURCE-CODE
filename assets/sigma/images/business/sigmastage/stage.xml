@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="stage.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="stagefrontGrey instance 10000" x="0" y="0" width="2560" height="581" frameX="0" frameY="0" frameWidth="2564" frameHeight="585"/>
+	<SubTexture name="stagefrontGrey instance 10001" x="0" y="581" width="2564" height="585"/>
+	<SubTexture name="stagefrontGrey instance 10002" x="0" y="1166" width="1771" height="535" frameX="-359" frameY="-38" frameWidth="2564" frameHeight="585"/>
+</TextureAtlas>

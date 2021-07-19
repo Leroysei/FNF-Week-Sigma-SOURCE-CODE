@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SoullessAssets.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SOULLESS_damagedF0000" x="0" y="0" width="1566" height="1106" frameX="-6" frameY="0" frameWidth="1845" frameHeight="1116"/>
+	<SubTexture name="SOULLESS_damagedF0001" x="1566" y="0" width="1676" height="1106" frameX="-6" frameY="0" frameWidth="1845" frameHeight="1116"/>
+	<SubTexture name="SOULLESS_damagedF0002" x="3242" y="0" width="1845" height="1095" frameX="0" frameY="-21" frameWidth="1845" frameHeight="1116"/>
+	<SubTexture name="SOULLESS_damagedF0003" x="5087" y="0" width="1845" height="1095" frameX="0" frameY="-21" frameWidth="1845" frameHeight="1116"/>
+	<SubTexture name="SOULLESS_damagedF0004" x="0" y="1106" width="1845" height="1095" frameX="0" frameY="-21" frameWidth="1845" frameHeight="1116"/>
+	<SubTexture name="SOULLESS_downF0000" x="1845" y="1106" width="1400" height="1065"/>
+	<SubTexture name="SOULLESS_downF0001" x="3245" y="1106" width="1400" height="1054" frameX="0" frameY="-11" frameWidth="1400" frameHeight="1065"/>
+	<SubTexture name="SOULLESS_downF0002" x="4645" y="1106" width="1400" height="1065"/>
+	<SubTexture name="SOULLESS_downF0003" x="6045" y="1106" width="1400" height="1054" frameX="0" frameY="-11" frameWidth="1400" frameHeight="1065"/>
+	<SubTexture name="SOULLESS_idle_mini0000" x="7445" y="1106" width="573" height="713" frameX="-39" frameY="0" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0001" x="7445" y="1106" width="573" height="713" frameX="-39" frameY="0" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0002" x="7445" y="1106" width="573" height="713" frameX="-39" frameY="0" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0003" x="0" y="2201" width="608" height="697" frameX="-12" frameY="-17" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0004" x="0" y="2201" width="608" height="697" frameX="-12" frameY="-17" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0005" x="608" y="2201" width="629" height="684" frameX="0" frameY="-30" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0006" x="608" y="2201" width="629" height="684" frameX="0" frameY="-30" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0007" x="608" y="2201" width="629" height="684" frameX="0" frameY="-30" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0008" x="608" y="2201" width="629" height="684" frameX="0" frameY="-30" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0009" x="0" y="2201" width="608" height="697" frameX="-12" frameY="-17" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idle_mini0010" x="0" y="2201" width="608" height="697" frameX="-12" frameY="-17" frameWidth="629" frameHeight="714"/>
+	<SubTexture name="SOULLESS_idleF0000" x="1237" y="2201" width="1566" height="1106"/>
+	<SubTexture name="SOULLESS_idleF0001" x="2803" y="2201" width="1566" height="1106"/>
+	<SubTexture name="SOULLESS_idleF0002" x="4369" y="2201" width="1566" height="1106"/>
+	<SubTexture name="SOULLESS_idleF0003" x="5935" y="2201" width="1566" height="1106"/>
+	<SubTexture name="SOULLESS_idleF0004" x="0" y="3307" width="1547" height="1106" frameX="0" frameY="0" frameWidth="1566" frameHeight="1106"/>
+	<SubTexture name="SOULLESS_idleF0005" x="1547" y="3307" width="1547" height="1106" frameX="0" frameY="0" frameWidth="1566" frameHeight="1106"/>
+	<SubTexture name="SOULLESS_idleF0006" x="1237" y="2201" width="1566" height="1106"/>
+	<SubTexture name="SOULLESS_idleF0007" x="3094" y="3307" width="1566" height="1099" frameX="0" frameY="-7" frameWidth="1566" frameHeight="1106"/>
+	<SubTexture name="SOULLESS_idleF0008" x="4660" y="3307" width="1547" height="1099" frameX="0" frameY="-7" frameWidth="1566" frameHeight="1106"/>
+	<SubTexture name="SOULLESS_leftF0000" x="6207" y="3307" width="1472" height="1106"/>
+	<SubTexture name="SOULLESS_leftF0001" x="0" y="4413" width="1472" height="1064" frameX="0" frameY="-42" frameWidth="1472" frameHeight="1106"/>
+	<SubTexture name="SOULLESS_leftF0002" x="1472" y="4413" width="1472" height="1106"/>
+	<SubTexture name="SOULLESS_leftF0003" x="2944" y="4413" width="1472" height="1064" frameX="0" frameY="-42" frameWidth="1472" frameHeight="1106"/>
+	<SubTexture name="SOULLESS_rightF0000" x="4416" y="4413" width="1243" height="1085" frameX="0" frameY="0" frameWidth="1245" frameHeight="1085"/>
+	<SubTexture name="SOULLESS_rightF0001" x="5659" y="4413" width="1245" height="1055" frameX="0" frameY="-30" frameWidth="1245" frameHeight="1085"/>
+	<SubTexture name="SOULLESS_rightF0002" x="6904" y="4413" width="1243" height="1085" frameX="0" frameY="0" frameWidth="1245" frameHeight="1085"/>
+	<SubTexture name="SOULLESS_rightF0003" x="0" y="5519" width="1245" height="1055" frameX="0" frameY="-30" frameWidth="1245" frameHeight="1085"/>
+	<SubTexture name="SOULLESS_upF0000" x="1245" y="5519" width="1550" height="1049" frameX="0" frameY="-2" frameWidth="1550" frameHeight="1051"/>
+	<SubTexture name="SOULLESS_upF0001" x="2795" y="5519" width="1550" height="1051"/>
+	<SubTexture name="SOULLESS_upF0002" x="4345" y="5519" width="1550" height="1049" frameX="0" frameY="-2" frameWidth="1550" frameHeight="1051"/>
+	<SubTexture name="SOULLESS_upF0003" x="5895" y="5519" width="1550" height="1051"/>
+	<SubTexture name="SigmaCassette_right0000" x="7445" y="5519" width="376" height="626" frameX="-1" frameY="0" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaCassette_right0001" x="7445" y="5519" width="376" height="626" frameX="-1" frameY="0" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaCassette_right0002" x="7821" y="5519" width="354" height="625" frameX="0" frameY="-1" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaCassette_right0003" x="7821" y="5519" width="354" height="625" frameX="0" frameY="-1" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaCassette_right0004" x="7821" y="5519" width="354" height="625" frameX="0" frameY="-1" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaCassette_right0005" x="7821" y="5519" width="354" height="625" frameX="0" frameY="-1" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaCassette_right0006" x="7821" y="5519" width="354" height="625" frameX="0" frameY="-1" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaCassette_right0007" x="7821" y="5519" width="354" height="625" frameX="0" frameY="-1" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaCassette_right0008" x="7821" y="5519" width="354" height="625" frameX="0" frameY="-1" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaCassette_right0009" x="7821" y="5519" width="354" height="625" frameX="0" frameY="-1" frameWidth="377" frameHeight="626"/>
+	<SubTexture name="SigmaDad_UP0000" x="0" y="6574" width="408" height="818" frameX="-1" frameY="0" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0001" x="0" y="6574" width="408" height="818" frameX="-1" frameY="0" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0002" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0003" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0004" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0005" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0006" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0007" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0008" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0009" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0010" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0011" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0012" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0013" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0014" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0015" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0016" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0017" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0018" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0019" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0020" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0021" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0022" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0023" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0024" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0025" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0026" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0027" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0028" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0029" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0030" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0031" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0032" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0033" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0034" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0035" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0036" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0037" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0038" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0039" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0040" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0041" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0042" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0043" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0044" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0045" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0046" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0047" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0048" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0049" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0050" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0051" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0052" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0053" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0054" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0055" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0056" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0057" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0058" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaDad_UP0059" x="408" y="6574" width="408" height="809" frameX="0" frameY="-8" frameWidth="409" frameHeight="818"/>
+	<SubTexture name="SigmaMadness_down0000" x="816" y="6574" width="350" height="447" frameX="-7" frameY="0" frameWidth="364" frameHeight="447"/>
+	<SubTexture name="SigmaMadness_down0001" x="816" y="6574" width="350" height="447" frameX="-7" frameY="0" frameWidth="364" frameHeight="447"/>
+	<SubTexture name="SigmaMadness_down0002" x="1166" y="6574" width="364" height="434" frameX="0" frameY="-13" frameWidth="364" frameHeight="447"/>
+	<SubTexture name="SigmaMadness_down0003" x="1166" y="6574" width="364" height="434" frameX="0" frameY="-13" frameWidth="364" frameHeight="447"/>
+	<SubTexture name="SigmaMadness_down0004" x="1166" y="6574" width="364" height="434" frameX="0" frameY="-13" frameWidth="364" frameHeight="447"/>
+	<SubTexture name="SigmaMadness_down0005" x="1166" y="6574" width="364" height="434" frameX="0" frameY="-13" frameWidth="364" frameHeight="447"/>
+	<SubTexture name="SigmaMadness_down0006" x="1166" y="6574" width="364" height="434" frameX="0" frameY="-13" frameWidth="364" frameHeight="447"/>
+	<SubTexture name="SigmaMom_Left0000" x="1530" y="6574" width="578" height="771"/>
+	<SubTexture name="SigmaMom_Left0001" x="1530" y="6574" width="578" height="771"/>
+	<SubTexture name="SigmaMom_Left0002" x="2108" y="6574" width="564" height="762" frameX="0" frameY="-9" frameWidth="578" frameHeight="771"/>
+	<SubTexture name="SigmaMom_Left0003" x="2108" y="6574" width="564" height="762" frameX="0" frameY="-9" frameWidth="578" frameHeight="771"/>
+	<SubTexture name="SigmaMom_Left0004" x="2672" y="6574" width="564" height="764" frameX="0" frameY="-7" frameWidth="578" frameHeight="771"/>
+	<SubTexture name="SigmaMom_Left0005" x="2672" y="6574" width="564" height="764" frameX="0" frameY="-7" frameWidth="578" frameHeight="771"/>
+	<SubTexture name="SigmaMom_Left0006" x="2672" y="6574" width="564" height="764" frameX="0" frameY="-7" frameWidth="578" frameHeight="771"/>
+	<SubTexture name="SigmaMom_Left0007" x="2672" y="6574" width="564" height="764" frameX="0" frameY="-7" frameWidth="578" frameHeight="771"/>
+	<SubTexture name="SigmaMom_Left0008" x="2672" y="6574" width="564" height="764" frameX="0" frameY="-7" frameWidth="578" frameHeight="771"/>
+	<SubTexture name="SigmaMom_Left0009" x="2672" y="6574" width="564" height="764" frameX="0" frameY="-7" frameWidth="578" frameHeight="771"/>
+	<SubTexture name="SigmaPico_Right0000" x="3236" y="6574" width="459" height="476" frameX="0" frameY="0" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0001" x="3236" y="6574" width="459" height="476" frameX="0" frameY="0" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0002" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0003" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0004" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0005" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0006" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0007" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0008" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0009" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0010" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0011" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0012" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0013" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0014" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0015" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaPico_Right0016" x="3695" y="6574" width="442" height="473" frameX="-18" frameY="-3" frameWidth="460" frameHeight="476"/>
+	<SubTexture name="SigmaSempai_down0000" x="4137" y="6574" width="418" height="751" frameX="-2" frameY="0" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaSempai_down0001" x="4137" y="6574" width="418" height="751" frameX="-2" frameY="0" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaSempai_down0002" x="4555" y="6574" width="429" height="744" frameX="0" frameY="-7" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaSempai_down0003" x="4555" y="6574" width="429" height="744" frameX="0" frameY="-7" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaSempai_down0004" x="4555" y="6574" width="429" height="744" frameX="0" frameY="-7" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaSempai_down0005" x="4555" y="6574" width="429" height="744" frameX="0" frameY="-7" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaSempai_down0006" x="4555" y="6574" width="429" height="744" frameX="0" frameY="-7" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaSempai_down0007" x="4555" y="6574" width="429" height="744" frameX="0" frameY="-7" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaSempai_down0008" x="4555" y="6574" width="429" height="744" frameX="0" frameY="-7" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaSempai_down0009" x="4555" y="6574" width="429" height="744" frameX="0" frameY="-7" frameWidth="429" frameHeight="751"/>
+	<SubTexture name="SigmaTankman_up0000" x="4984" y="6574" width="453" height="567" frameX="-2" frameY="0" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0001" x="4984" y="6574" width="453" height="567" frameX="-2" frameY="0" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0002" x="5437" y="6574" width="463" height="551" frameX="0" frameY="-16" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0003" x="5437" y="6574" width="463" height="551" frameX="0" frameY="-16" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0004" x="5437" y="6574" width="463" height="551" frameX="0" frameY="-16" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0005" x="5437" y="6574" width="463" height="551" frameX="0" frameY="-16" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0006" x="5437" y="6574" width="463" height="551" frameX="0" frameY="-16" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0007" x="5437" y="6574" width="463" height="551" frameX="0" frameY="-16" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0008" x="5437" y="6574" width="463" height="551" frameX="0" frameY="-16" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0009" x="5437" y="6574" width="463" height="551" frameX="0" frameY="-16" frameWidth="463" frameHeight="567"/>
+	<SubTexture name="SigmaTankman_up0010" x="5437" y="6574" width="463" height="551" frameX="0" frameY="-16" frameWidth="463" frameHeight="567"/>
+</TextureAtlas>

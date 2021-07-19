@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="soulless_gf.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="soulless_gf instance 10000" x="0" y="0" width="932" height="1076" frameX="-16" frameY="0" frameWidth="960" frameHeight="1121"/>
+	<SubTexture name="soulless_gf instance 10001" x="932" y="0" width="938" height="1077" frameX="-13" frameY="-8" frameWidth="960" frameHeight="1121"/>
+	<SubTexture name="soulless_gf instance 10002" x="1870" y="0" width="946" height="1078" frameX="-9" frameY="-16" frameWidth="960" frameHeight="1121"/>
+	<SubTexture name="soulless_gf instance 10003" x="2816" y="0" width="953" height="1078" frameX="-6" frameY="-24" frameWidth="960" frameHeight="1121"/>
+	<SubTexture name="soulless_gf instance 10004" x="0" y="1078" width="960" height="1096" frameX="0" frameY="-25" frameWidth="960" frameHeight="1121"/>
+	<SubTexture name="soulless_gf instance 10005" x="960" y="1078" width="954" height="1093" frameX="-3" frameY="-17" frameWidth="960" frameHeight="1121"/>
+	<SubTexture name="soulless_gf instance 10006" x="1914" y="1078" width="952" height="1094" frameX="-4" frameY="-15" frameWidth="960" frameHeight="1121"/>
+	<SubTexture name="soulless_gf instance 10007" x="2866" y="1078" width="935" height="1074" frameX="-15" frameY="-4" frameWidth="960" frameHeight="1121"/>
+	<SubTexture name="soulless_gf instance 10008" x="0" y="2174" width="933" height="1075" frameX="-16" frameY="-2" frameWidth="960" frameHeight="1121"/>
+	<SubTexture name="soulless_gf instance 10009" x="0" y="0" width="932" height="1076" frameX="-16" frameY="0" frameWidth="960" frameHeight="1121"/>
+</TextureAtlas>

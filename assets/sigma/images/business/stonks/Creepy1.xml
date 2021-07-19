@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Creepy1.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="TheHell0000" x="0" y="0" width="2003" height="1237" frameX="0" frameY="0" frameWidth="2115" frameHeight="1237"/>
+	<SubTexture name="TheHell0001" x="0" y="0" width="2003" height="1237" frameX="0" frameY="0" frameWidth="2115" frameHeight="1237"/>
+	<SubTexture name="TheHell0002" x="0" y="1237" width="2115" height="1165" frameX="0" frameY="0" frameWidth="2115" frameHeight="1237"/>
+	<SubTexture name="TheHell0003" x="0" y="1237" width="2115" height="1165" frameX="0" frameY="0" frameWidth="2115" frameHeight="1237"/>
+</TextureAtlas>

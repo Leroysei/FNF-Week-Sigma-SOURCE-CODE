@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sigma_icons.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="trollface0000" x="0" y="0" width="611" height="721" frameX="0" frameY="-2" frameWidth="613" frameHeight="723"/>
+	<SubTexture name="shocked0000" x="611" y="0" width="611" height="721" frameX="-2" frameY="0" frameWidth="613" frameHeight="723"/>
+	<SubTexture name="creepy0000" x="1222" y="0" width="611" height="721" frameX="-2" frameY="0" frameWidth="613" frameHeight="723"/>
+	<SubTexture name="soulless0000" x="0" y="721" width="611" height="721" frameX="-2" frameY="0" frameWidth="613" frameHeight="723"/>
+</TextureAtlas>

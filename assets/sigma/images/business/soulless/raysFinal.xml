@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="raysFinal.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rays0001.jpg instance 1" x="0" y="0" width="1920" height="1080"/>
+	<SubTexture name="rays0002.jpg instance 1" x="0" y="1080" width="1920" height="1080"/>
+	<SubTexture name="rays0003.jpg instance 1" x="0" y="2160" width="1920" height="1080"/>
+	<SubTexture name="rays0004.jpg instance 1" x="0" y="3240" width="1920" height="1080"/>
+	<SubTexture name="rays0005.jpg instance 1" x="0" y="4320" width="1920" height="1080"/>
+	<SubTexture name="rays0006.jpg instance 1" x="0" y="5400" width="1920" height="1080"/>
+	<SubTexture name="RaysFinal0000" x="0" y="0" width="1920" height="1080"/>
+	<SubTexture name="RaysFinal0001" x="0" y="1080" width="1920" height="1080"/>
+	<SubTexture name="RaysFinal0002" x="0" y="2160" width="1920" height="1080"/>
+	<SubTexture name="RaysFinal0003" x="0" y="3240" width="1920" height="1080"/>
+	<SubTexture name="RaysFinal0004" x="0" y="4320" width="1920" height="1080"/>
+	<SubTexture name="RaysFinal0005" x="0" y="5400" width="1920" height="1080"/>
+	<SubTexture name="RaysFinal0006" x="0" y="6480" width="1920" height="1080"/>
+</TextureAtlas>

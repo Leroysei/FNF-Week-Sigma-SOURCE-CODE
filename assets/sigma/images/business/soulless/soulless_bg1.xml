@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="soulless_bg1.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="soulles2_bg0000" x="0" y="0" width="1923" height="1082" frameX="0" frameY="0" frameWidth="1923" frameHeight="1085"/>
+	<SubTexture name="soulles2_bg0001" x="1923" y="0" width="1923" height="1085"/>
+	<SubTexture name="soulles2_bg0002" x="0" y="1085" width="1923" height="1085"/>
+	<SubTexture name="soulles2_bg0003" x="1923" y="1085" width="1923" height="1085"/>
+	<SubTexture name="soulles2_bg0004" x="0" y="2170" width="1923" height="1085"/>
+	<SubTexture name="soulles2_bg0005" x="1923" y="2170" width="1923" height="1085"/>
+	<SubTexture name="soulles2_bg0006" x="0" y="3255" width="1923" height="1085"/>
+	<SubTexture name="soulles2_bg0007" x="1923" y="3255" width="1923" height="1085"/>
+</TextureAtlas>

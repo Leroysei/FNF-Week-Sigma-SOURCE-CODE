@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="static1.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sigmastatic0000" x="0" y="0" width="1377" height="775"/>
+	<SubTexture name="sigmastatic0001" x="1377" y="0" width="1377" height="775"/>
+	<SubTexture name="sigmastatic0002" x="0" y="775" width="1377" height="775"/>
+	<SubTexture name="sigmastatic0003" x="1377" y="775" width="1377" height="775"/>
+	<SubTexture name="sigmastatic0004" x="0" y="1550" width="1377" height="775"/>
+	<SubTexture name="sigmastatic0005" x="1377" y="1550" width="1377" height="775"/>
+	<SubTexture name="sigmastatic0006" x="0" y="2325" width="1377" height="775"/>
+	<SubTexture name="sigmastatic0007" x="1377" y="2325" width="1377" height="775"/>
+	<SubTexture name="sigmastatic0008" x="0" y="3100" width="1377" height="775"/>
+	<SubTexture name="sigmastatic0009" x="1377" y="3100" width="1377" height="775"/>
+</TextureAtlas>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Crowd.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Crowd_Cheer0000" x="0" y="0" width="1920" height="972" frameX="0" frameY="-78" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="Crowd_Cheer0001" x="0" y="0" width="1920" height="972" frameX="0" frameY="-78" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="Crowd_Cheer0002" x="0" y="972" width="1920" height="1046" frameX="0" frameY="-25" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="Crowd_Cheer0003" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0004" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0005" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0006" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0007" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0008" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0009" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0010" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0011" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0012" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0013" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0014" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0015" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0016" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0017" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0018" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0019" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0020" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0021" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0022" x="0" y="2018" width="1920" height="1080"/>
+	<SubTexture name="Crowd_Cheer0023" x="0" y="2018" width="1920" height="1080"/>
+</TextureAtlas>
