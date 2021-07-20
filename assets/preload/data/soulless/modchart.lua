@@ -20,14 +20,10 @@ end
 
 function update(elapsed)
     if curBeat > 206 then
-        local firstColumn = 0
-        local secondColumn = 1150
         local currentBeat = (songPos / 1000)*(bpm/60)
-		for i=0,3 do
-			setActorX(firstColumn + 8 * math.sin((currentBeat + i*0.25) * math.pi), i)
-		end
-        for i=4,7 do
-			setActorX(secondColumn + 8 * math.sin((currentBeat + i*0.25) * math.pi), i)
+		for i=0,7 do
+			setActorX(_G['defaultStrum'..i..'X'] + 8 * math.sin((currentBeat + i*0.25) * math.pi), i)
+			setActorY(_G['defaultStrum'..i..'Y'] + 8 * math.cos((currentBeat + i*0.25) * math.pi), i)
         end
     end
 end
@@ -63,39 +59,6 @@ function beatHit(beat)
         tweenFadeIn(5, 1, 2, "If you see this you a bitch")
         tweenFadeIn(6, 1, 2.5, "If you see this you a bitch")
         tweenFadeIn(7, 1, 3, "If you see this you a bitch")
-    end
-    if beat == 206 then
-        local firstRow = 0
-        local secondRow = 100 
-        local thirdRow  = 200
-        local fourthRow = 300
-        local firstColumn = 0
-        local secondColumn = 1150
-
-        setActorX(firstColumn, 0)
-        setActorY(firstRow, 0)
-
-        setActorX(firstColumn, 1)
-        setActorY(secondRow, 1)
-
-        setActorX(firstColumn, 2)
-        setActorY(thirdRow, 2)
-
-        setActorX(firstColumn, 3)
-        setActorY(fourthRow, 3)
-
-        setActorX(secondColumn, 4)
-        setActorY(firstRow, 4)
-
-        setActorX(secondColumn, 5)
-        setActorY(secondRow, 5)
-
-        setActorX(secondColumn, 6)
-        setActorY(thirdRow, 6)
-
-        setActorX(secondColumn, 7)
-        setActorY(fourthRow, 7)
-       
     end
 end
 
