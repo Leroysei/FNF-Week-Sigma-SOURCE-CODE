@@ -1,45 +1,66 @@
 package;
 
+import flixel.FlxBasic;
 import Controls.Control;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxSubState;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.group.FlxGroup.FlxTypedGroup;
-import flixel.input.gamepad.FlxGamepad;
 import flixel.input.keyboard.FlxKey;
 import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+import flixel.util.FlxTimer;
 import flixel.util.FlxColor;
-import openfl.Lib;
+
 #if windows
-import llua.Lua;
+import Discord.DiscordClient;
 #end
+
+/*
+if (accepted)
+		{
+			var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty);
+
+			trace(poop);
+
+			PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
+			PlayState.isStoryMode = false;
+			PlayState.storyDifficulty = curDifficulty;
+			PlayState.storyWeek = songs[curSelected].week;
+			trace('CUR WEEK' + PlayState.storyWeek);
+			LoadingState.loadAndSwitchState(new PlayState());
+		}
+*/
 
 class PauseSubState extends MusicBeatSubstate
 {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
+	var difMenuShit:FlxTypedGroup<Alphabet>;
+	var gendifMenuShit:FlxTypedGroup<Alphabet>;
 
-	var menuItems:Array<String> = ['Resume', 'Restart Song', 'Exit to menu'];
+	var mainmenuItems:Array<String> = ['Resume', 'Restart Song', 'Difficulty', 'General Difficulty','Practice mode', 'Exit level','Exit to menu'];
+	var dificultymenuItems:Array<String> = ['Easy', 'Normal', 'Hard','Back'];
+	var generaldificultymenuItems:Array<String> = ['Baby', 'Classic', 'Permissive', 'Geometry Dash','Back'];
+	var menuItems:Array<String> = [];
 	var curSelected:Int = 0;
 
 	var pauseMusic:FlxSound;
-	var perSongOffset:FlxText;
 
-	var offsetChanged:Bool = false;
+	var practice:FlxText;
+
+	public static var tweens:FlxTweenManager;
 
 	public function new(x:Float, y:Float)
 	{
 		super();
+		FlxTween.globalManager.active = false;
+		//FlxTimer.globalManager.active = false;
 
-		if (PlayState.instance.useVideo)
-		{
-			menuItems.remove("Resume");
-			if (GlobalVideo.get().playing)
-				GlobalVideo.get().pause();
-		}
+		add(tweens = new FlxTweenManager());
+		
 
 		pauseMusic = new FlxSound().loadEmbedded(Paths.music('breakfast'), true, true);
 		pauseMusic.volume = 0;
@@ -60,36 +81,78 @@ class PauseSubState extends MusicBeatSubstate
 		add(levelInfo);
 
 		var levelDifficulty:FlxText = new FlxText(20, 15 + 32, 0, "", 32);
-		levelDifficulty.text += CoolUtil.difficultyFromInt(PlayState.storyDifficulty).toUpperCase();
+		levelDifficulty.text += CoolUtil.difficultyString();
 		levelDifficulty.scrollFactor.set();
 		levelDifficulty.setFormat(Paths.font('vcr.ttf'), 32);
 		levelDifficulty.updateHitbox();
 		add(levelDifficulty);
 
+		var generalDifficulty:FlxText = new FlxText(20, 15 + 64, 0, "", 32);
+		generalDifficulty.text += CoolUtil.generaldifficultyString();
+		generalDifficulty.scrollFactor.set();
+		generalDifficulty.setFormat(Paths.font('vcr.ttf'), 32);
+		generalDifficulty.updateHitbox();
+		add(generalDifficulty);
+
+		practice = new FlxText(20, 15 + 96, 0, "", 32);
+		practice.text = "Practice mode";
+		practice.scrollFactor.set();
+		practice.setFormat(Paths.font('vcr.ttf'), 32);
+		practice.updateHitbox();
+		add(practice);
+
 		levelDifficulty.alpha = 0;
 		levelInfo.alpha = 0;
+		generalDifficulty.alpha = 0;
+		practice.alpha = 0;
 
 		levelInfo.x = FlxG.width - (levelInfo.width + 20);
 		levelDifficulty.x = FlxG.width - (levelDifficulty.width + 20);
+		generalDifficulty.x = FlxG.width - (generalDifficulty.width + 20);
+		practice.x = FlxG.width - (practice.width + 20);
 
-		FlxTween.tween(bg, {alpha: 0.6}, 0.4, {ease: FlxEase.quartInOut});
-		FlxTween.tween(levelInfo, {alpha: 1, y: 20}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.3});
-		FlxTween.tween(levelDifficulty, {alpha: 1, y: levelDifficulty.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.5});
+		
+
+		tweens.tween(bg, {alpha: 0.6}, 0.4, {ease: FlxEase.quartInOut});
+		tweens.tween(levelInfo, {alpha: 1, y: 20}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.3});
+		tweens.tween(levelDifficulty, {alpha: 1, y: levelDifficulty.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.5});
+		tweens.tween(generalDifficulty, {alpha: 1, y: generalDifficulty.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.7});
+		if(FlxG.save.data.practice){
+			tweens.tween(practice, {alpha: 1, y: practice.y + 5}, 0.4, {ease: FlxEase.quartInOut, startDelay: 0.9});
+		}else{
+			practice.y += 5;
+
+		}
 
 		grpMenuShit = new FlxTypedGroup<Alphabet>();
 		add(grpMenuShit);
-		perSongOffset = new FlxText(5, FlxG.height
-			- 18, 0,
-			"Additive Offset (Left, Right): "
-			+ PlayState.songOffset
-			+ " - Description - "
-			+ 'Adds value to global offset, per song.', 12);
-		perSongOffset.scrollFactor.set();
-		perSongOffset.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 
-		#if cpp
-		add(perSongOffset);
-		#end
+		difMenuShit = new FlxTypedGroup<Alphabet>();
+
+		gendifMenuShit = new FlxTypedGroup<Alphabet>();
+
+		menuItems = dificultymenuItems;
+
+		for (i in 0...menuItems.length)
+		{
+			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
+			songText.isMenuItem = true;
+			songText.targetY = i;
+			difMenuShit.add(songText);
+		}
+
+		menuItems = generaldificultymenuItems;
+
+		for (i in 0...menuItems.length)
+		{
+			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
+			songText.isMenuItem = true;
+			songText.targetY = i;
+			gendifMenuShit.add(songText);
+		}
+
+
+		menuItems = mainmenuItems;
 
 		for (i in 0...menuItems.length)
 		{
@@ -99,163 +162,166 @@ class PauseSubState extends MusicBeatSubstate
 			grpMenuShit.add(songText);
 		}
 
+		
+
+		
+
 		changeSelection();
 
 		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
 	}
 
+
+
 	override function update(elapsed:Float)
 	{
 		if (pauseMusic.volume < 0.5)
-			pauseMusic.volume += 0.01 * elapsed;
+			pauseMusic.volume += 0.02 * elapsed;
 
 		super.update(elapsed);
 
-		if (PlayState.instance.useVideo)
-			menuItems.remove('Resume');
+		var upP = controls.UP_P;
+		var downP = controls.DOWN_P;
+		var accepted = controls.ACCEPT;
 
-		var gamepad:FlxGamepad = FlxG.gamepads.lastActive;
-
-		var upPcontroller:Bool = false;
-		var downPcontroller:Bool = false;
-		var leftPcontroller:Bool = false;
-		var rightPcontroller:Bool = false;
-		var oldOffset:Float = 0;
-
-		if (gamepad != null && KeyBinds.gamepad)
-		{
-			upPcontroller = gamepad.justPressed.DPAD_UP;
-			downPcontroller = gamepad.justPressed.DPAD_DOWN;
-			leftPcontroller = gamepad.justPressed.DPAD_LEFT;
-			rightPcontroller = gamepad.justPressed.DPAD_RIGHT;
-		}
-
-		// pre lowercasing the song name (update)
-		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
-		switch (songLowercase)
-		{
-			case 'dad-battle':
-				songLowercase = 'dadbattle';
-			case 'philly-nice':
-				songLowercase = 'philly';
-		}
-		var songPath = 'assets/data/' + songLowercase + '/';
-
-		if (controls.UP_P || upPcontroller)
+		if (upP)
 		{
 			changeSelection(-1);
 		}
-		else if (controls.DOWN_P || downPcontroller)
+		if (downP)
 		{
 			changeSelection(1);
 		}
 
-		#if cpp
-		else if (controls.LEFT_P || leftPcontroller)
+		if (accepted)
 		{
-			oldOffset = PlayState.songOffset;
-			PlayState.songOffset -= 1;
-			sys.FileSystem.rename(songPath + oldOffset + '.offset', songPath + PlayState.songOffset + '.offset');
-			perSongOffset.text = "Additive Offset (Left, Right): "
-				+ PlayState.songOffset
-				+ " - Description - "
-				+ 'Adds value to global offset, per song.';
-
-			// Prevent loop from happening every single time the offset changes
-			if (!offsetChanged)
-			{
-				grpMenuShit.clear();
-
-				menuItems = ['Restart Song', 'Exit to menu'];
-
-				for (i in 0...menuItems.length)
-				{
-					var songText:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
-					songText.isMenuItem = true;
-					songText.targetY = i;
-					grpMenuShit.add(songText);
-				}
-
-				changeSelection();
-
-				cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
-				offsetChanged = true;
-			}
-		}
-		else if (controls.RIGHT_P || rightPcontroller)
-		{
-			oldOffset = PlayState.songOffset;
-			PlayState.songOffset += 1;
-			sys.FileSystem.rename(songPath + oldOffset + '.offset', songPath + PlayState.songOffset + '.offset');
-			perSongOffset.text = "Additive Offset (Left, Right): "
-				+ PlayState.songOffset
-				+ " - Description - "
-				+ 'Adds value to global offset, per song.';
-			if (!offsetChanged)
-			{
-				grpMenuShit.clear();
-
-				menuItems = ['Restart Song', 'Exit to menu'];
-
-				for (i in 0...menuItems.length)
-				{
-					var songText:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
-					songText.isMenuItem = true;
-					songText.targetY = i;
-					grpMenuShit.add(songText);
-				}
-
-				changeSelection();
-
-				cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
-				offsetChanged = true;
-			}
-		}
-		#end
-
-		if (controls.ACCEPT)
-		{
+			
 			var daSelected:String = menuItems[curSelected];
+
+			FlxTween.globalManager.active = true;
+			//FlxTimer.globalManager.active = true;
+			
+			
 
 			switch (daSelected)
 			{
 				case "Resume":
 					close();
 				case "Restart Song":
-					if (PlayState.instance.useVideo)
-					{
-						GlobalVideo.get().stop();
-						PlayState.instance.remove(PlayState.instance.videoSprite);
-						PlayState.instance.removedVideo = true;
-					}
 					FlxG.resetState();
-				case "Exit to menu":
-					if (PlayState.instance.useVideo)
-					{
-						GlobalVideo.get().stop();
-						PlayState.instance.remove(PlayState.instance.videoSprite);
-						PlayState.instance.removedVideo = true;
-					}
-					if (PlayState.loadRep)
-					{
-						FlxG.save.data.botplay = false;
-						FlxG.save.data.scrollSpeed = 1;
-						FlxG.save.data.downscroll = false;
-					}
-					PlayState.loadRep = false;
-					#if windows
-					if (PlayState.luaModchart != null)
-					{
-						PlayState.luaModchart.die();
-						PlayState.luaModchart = null;
-					}
-					#end
-					if (FlxG.save.data.fpsCap > 290)
-						(cast(Lib.current.getChildAt(0), Main)).setFPSCap(290);
+				case "Difficulty":
 
-					FlxG.switchState(new MainMenuState());
+					
+					remove(grpMenuShit);
+					
+					curSelected = 0;
+
+					menuItems = dificultymenuItems;	
+
+					add(difMenuShit);
+
+					changeSelection();
+				
+				case "General Difficulty":
+
+					remove(grpMenuShit);
+					
+					curSelected = 0;
+
+					menuItems = generaldificultymenuItems;	
+
+					add(gendifMenuShit);
+
+					changeSelection();
+				
+				case "Practice mode":
+
+					if(FlxG.save.data.practice ){
+						FlxG.save.data.practice = false;
+						practice.alpha = 0;
+						
+					}else{
+						FlxG.save.data.practice = true;
+						practice.alpha = 1;
+
+					}
+					FlxG.save.flush();
+				case "Exit to menu":
+					PlayState.loadRep = false;
+					if (PlayState.offsetTesting)
+					{
+						PlayState.offsetTesting = false;
+						FlxG.switchState(new OptionsMenu());
+					}
+					else
+						FlxG.switchState(new MainMenuState());
+
+				
+				//difficulty options thingy idk
+
+				case "Easy":
+					
+					changeDif(0);
+
+				case "Normal":
+					changeDif(1);
+
+				case "Hard":
+					changeDif(2);
+
+
+				case "Back":
+
+					remove(difMenuShit);
+					remove(gendifMenuShit);
+
+					curSelected = 0;
+
+					menuItems = mainmenuItems;	
+
+					add(grpMenuShit);
+
+					changeSelection();
+
+				//General difficulty options over hea idk
+
+				case "Baby":
+					changeGenDif(0);
+
+				case "Classic":
+					changeGenDif(1);
+
+				case "Permissive":
+					changeGenDif(2);
+
+				case "Geometry Dash":
+					changeGenDif(3);
+
+				case 'Exit level':
+
+					if(PlayState.isStoryMode){
+						#if windows
+							DiscordClient.changePresence("In the Menus", null);
+						#end
+				
+						FlxG.switchState(new StoryMenuState());
+
+					}else{
+
+						#if windows
+							DiscordClient.changePresence("In the Freeplay Menu", null);
+						#end
+				
+				
+						FlxG.switchState(new FreeplayState());
+
+					}
+				
+
 			}
 		}
+
+		
 
 		if (FlxG.keys.justPressed.J)
 		{
@@ -282,19 +348,85 @@ class PauseSubState extends MusicBeatSubstate
 
 		var bullShit:Int = 0;
 
-		for (item in grpMenuShit.members)
-		{
-			item.targetY = bullShit - curSelected;
-			bullShit++;
+		if(menuItems == mainmenuItems){
 
-			item.alpha = 0.6;
-			// item.setGraphicSize(Std.int(item.width * 0.8));
-
-			if (item.targetY == 0)
+			for (item in grpMenuShit.members)
 			{
-				item.alpha = 1;
-				// item.setGraphicSize(Std.int(item.width));
+				item.targetY = bullShit - curSelected;
+				bullShit++;
+
+				item.alpha = 0.6;
+				// item.setGraphicSize(Std.int(item.width * 0.8));
+
+				if (item.targetY == 0)
+				{
+					item.alpha = 1;
+					// item.setGraphicSize(Std.int(item.width));
+				}
 			}
+
+		}else if(menuItems == dificultymenuItems){
+
+			for (item in difMenuShit.members)
+			{
+				item.targetY = bullShit - curSelected;
+				bullShit++;
+	
+				item.alpha = 0.6;
+				// item.setGraphicSize(Std.int(item.width * 0.8));
+	
+				if (item.targetY == 0)
+				{
+					item.alpha = 1;
+					// item.setGraphicSize(Std.int(item.width));
+				}
+			}	
+
+
+		}else if(menuItems == generaldificultymenuItems){
+			
+			for (item in gendifMenuShit.members)
+				{
+					item.targetY = bullShit - curSelected;
+					bullShit++;
+		
+					item.alpha = 0.6;
+					// item.setGraphicSize(Std.int(item.width * 0.8));
+		
+					if (item.targetY == 0)
+					{
+						item.alpha = 1;
+						// item.setGraphicSize(Std.int(item.width));
+					}
+				}	
+
+
 		}
+
+
+
 	}
+
+	function changeDif(dif:Int){
+		var poop:String = Highscore.formatSong(PlayState.SONG.song.toLowerCase(), dif);
+
+			trace(poop);
+
+			PlayState.SONG = Song.loadFromJson(poop, PlayState.SONG.song.toLowerCase());
+			PlayState.storyDifficulty = dif;
+			trace('CUR WEEK' + PlayState.storyWeek);
+			LoadingState.loadAndSwitchState(new PlayState());
+
+
+	}
+
+	function changeGenDif(dif:Int){
+		FlxG.save.data.dif = dif;
+
+		FlxG.save.flush();
+
+		FlxG.resetState();
+
+	}
+
 }

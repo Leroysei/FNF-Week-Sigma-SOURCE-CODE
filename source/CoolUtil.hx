@@ -1,21 +1,32 @@
 package;
 
 import lime.utils.Assets;
+import flixel.FlxG;
 
 using StringTools;
 
 class CoolUtil
 {
-	public static var difficultyArray:Array<String> = ['Easy', "Normal", "Hard"];
+	public static var difficultyArray:Array<String> = ['EASY', "NORMAL", "HARD"];
 
-	public static function difficultyFromInt(difficulty:Int):String
+	public static var generalDificulty:Array<String> = ["Baby", "Classic", "Permissive", "Geometry dash"];
+
+	public static function difficultyString():String
 	{
-		return difficultyArray[difficulty];
+		return difficultyArray[PlayState.storyDifficulty];
 	}
+
+	public static function generaldifficultyString():String
+	{
+		return generalDificulty[FlxG.save.data.dif];
+	}
+	
 
 	public static function coolTextFile(path:String):Array<String>
 	{
 		var daList:Array<String> = Assets.getText(path).trim().split('\n');
+
+		trace(daList);
 
 		for (i in 0...daList.length)
 		{

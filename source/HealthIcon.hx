@@ -9,18 +9,19 @@ class HealthIcon extends FlxSprite
 	 */
 	public var sprTracker:FlxSprite;
 
+	public var Scale = 150;
+
 	public function new(char:String = 'bf', isPlayer:Bool = false)
 	{
 		super();
 
 		loadGraphic(Paths.image('iconGrid'), true, 150, 150);
 
-		antialiasing = true;
 		animation.add('bf', [0, 1], 0, false, isPlayer);
-		animation.add('bftext', [0, 1], 0, false, isPlayer);
-		animation.add('bfsoulless', [0, 1], 0, false, isPlayer);
 		animation.add('bf-old', [14, 15], 0, false, isPlayer);
 		animation.add('gf', [16], 0, false, isPlayer);
+		animation.add('bftext', [0, 1], 0, false, isPlayer);
+		animation.add('bfsoulless', [0, 1], 0, false, isPlayer);
 		animation.add('gftext', [16], 0, false, isPlayer);
 		animation.add('gfsoulless', [16], 0, false, isPlayer);
 		animation.add('sigma', [24, 25], 0, false, isPlayer);
@@ -31,7 +32,15 @@ class HealthIcon extends FlxSprite
 		animation.add('enigma', [0, 1], 0, false, isPlayer);
 		animation.add('nope', [0, 1], 0, false, isPlayer);
 		animation.play(char);
-
+		switch (char)
+		{
+			case 'bf-pixel' | 'senpai' | 'senpai-angry' | 'spirit' | 'gf-pixel':
+				{}
+			default:
+				{
+					antialiasing = true;
+				}
+		}
 		scrollFactor.set();
 	}
 

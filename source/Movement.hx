@@ -247,14 +247,13 @@ class Effect extends FlxBasic
             case 'pivotRot':
 
                     if(! all){
-                        
                        
                         prevStat = 0;
                           
                         FlxTween.num(0, quantity - (set ? PlayState.angleD[targetInt + playerAdd] : 0), duration, options, function(adding:Float){
     
                             PlayState.angleD[targetInt + playerAdd] += (adding - prevStat);
-    
+                            //hold up lemme send u a pic lmao
                             prevStat = adding;
     
                             while(PlayState.angleD[targetInt + playerAdd] > 360){

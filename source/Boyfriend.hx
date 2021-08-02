@@ -19,7 +19,8 @@ class Boyfriend extends Character
 	override function update(elapsed:Float)
 	{
 		if (!debugMode)
-		{
+		{	
+			
 			if (animation.curAnim.name.startsWith('sing'))
 			{
 				holdTimer += elapsed;
@@ -27,7 +28,7 @@ class Boyfriend extends Character
 			else
 				holdTimer = 0;
 
-			if (animation.curAnim.name.endsWith('miss') && animation.curAnim.finished && !debugMode)
+			if (animation.curAnim.name.endsWith('miss') && animation.curAnim.finished)
 			{
 				playAnim('idle', true, false, 10);
 			}
@@ -36,6 +37,7 @@ class Boyfriend extends Character
 			{
 				playAnim('deathLoop');
 			}
+			
 		}
 
 		super.update(elapsed);
