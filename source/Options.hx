@@ -95,9 +95,9 @@ class DFJKOption extends Option
 			case 0:
 				controls.setKeyboardScheme(KeyboardScheme.Duo(true), true);
 			case 1:
-				controls.setKeyboardScheme(KeyboardScheme.Duo(true), true);
+				controls.setKeyboardScheme(KeyboardScheme.Solo, true);
 			case 2:
-				controls.setKeyboardScheme(KeyboardScheme.Duo(true), true);
+				controls.setKeyboardScheme(KeyboardScheme.Solo2, true);
 
 		}
 

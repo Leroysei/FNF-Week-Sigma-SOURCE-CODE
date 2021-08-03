@@ -215,7 +215,16 @@ class Character extends FlxSprite
 				addOffset('idle');
 
 				playAnim('idle');
-				flipX = true;
+			case 'gftext':
+				var tex = Paths.getSparrowAtlas('characters/GF_ass_sets_success');
+				frames = tex;
+				animation.addByPrefix('say', 'GF_textbox', 24, false);
+				animation.addByPrefix('test', 'GF Dancing Beat', 24, false);
+
+				addOffset('say', 107, 155);
+				addOffset('test', 0, -9);
+
+				playAnim('say');
 			case 'bftext':
 				var tex = Paths.getSparrowAtlas('characters/BoyFriend_Assets1');
 				frames = tex;

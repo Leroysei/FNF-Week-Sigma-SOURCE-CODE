@@ -668,9 +668,12 @@ class PlayState extends MusicBeatState
 			case 'floating-stage':
 				gf = new Character(1250, 130, gfVersion);
 				gf.scrollFactor.set(0.95, 0.95);
+				gf.alpha = 0;
 				add(gf);
+
 				dad = new Character(1250, 130, SONG.player2);
 				add(dad);
+
 				boyfriend = new Boyfriend(2020, 450, SONG.player1);
 				add(boyfriend);
 			case 'stage':
@@ -4356,6 +4359,7 @@ class PlayState extends MusicBeatState
 					boyfriend = new Boyfriend(2020, 450, 'bftext');
 					add(boyfriend);
 				case 122:
+					gf.alpha = 1;
 					remove(boyfriend);
 					boyfriend = new Boyfriend(2020, 450, 'bf');
 					add(boyfriend);
