@@ -218,13 +218,13 @@ class Character extends FlxSprite
 			case 'gftext':
 				var tex = Paths.getSparrowAtlas('characters/GF_ass_sets_success');
 				frames = tex;
-				animation.addByPrefix('say', 'GF_textbox', 24, false);
+				animation.addByPrefix('say', 'GF_textbox', 24);
 				animation.addByPrefix('test', 'GF Dancing Beat', 24, false);
 
-				addOffset('say', 107, 155);
-				addOffset('test', 0, -9);
+				addOffset('say', 5, -9);
+				addOffset('test', 5, -9);
 
-				playAnim('say');
+				playAnim('test');
 			case 'bftext':
 				var tex = Paths.getSparrowAtlas('characters/BoyFriend_Assets1');
 				frames = tex;

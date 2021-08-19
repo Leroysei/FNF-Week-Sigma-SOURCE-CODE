@@ -6,6 +6,7 @@ import Movement.EffectParams;
 import Section.SwagSection;
 import Song.SwagSong;
 import WiggleEffect.WiggleEffectType;
+import flixel.animation.FlxBaseAnimation;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
@@ -121,6 +122,7 @@ class PlayState extends MusicBeatState
 	var gfimpact:FlxSprite;
 	var background5:FlxSprite;
 	var clouds2:FlxSprite;
+	public var gfSpeak:FlxSprite;
 
 	private var notes:FlxTypedGroup<Note>;
 	private var unspawnNotes:Array<Note> = [];
@@ -668,14 +670,20 @@ class PlayState extends MusicBeatState
 			case 'floating-stage':
 				gf = new Character(1250, 130, gfVersion);
 				gf.scrollFactor.set(0.95, 0.95);
-				gf.alpha = 0;
 				add(gf);
 
 				dad = new Character(1250, 130, SONG.player2);
+				dad.alpha = 0;
 				add(dad);
 
 				boyfriend = new Boyfriend(2020, 450, SONG.player1);
 				add(boyfriend);
+
+				gfSpeak = new FlxSprite(gf.x - 100, gf.y - 145).loadGraphic(Paths.image('characters/GF_ass_sets_text', 'shared'));
+				gfSpeak.scrollFactor.set(0.95, 0.95);
+				gfSpeak.antialiasing = true;
+				gfSpeak.alpha = 0;
+				add(gfSpeak);
 			case 'stage':
 				gf = new Character(400, 130, gfVersion);
 				gf.scrollFactor.set(0.95, 0.95);
@@ -4348,18 +4356,15 @@ class PlayState extends MusicBeatState
 			switch (curStep)
 			{
 				case 52:
-					remove(dad);
-					dad = new Character(1250, 130, 'gftext');
-					add(dad);
+					gfSpeak.alpha = 1;
+					gf.alpha = 0;
 				case 80:
-					remove(dad);
-					dad = new Character(1250, 130, 'gf');
-					add(dad);
+					gfSpeak.alpha = 0;
+					gf.alpha = 1;
 					remove(boyfriend);
 					boyfriend = new Boyfriend(2020, 450, 'bftext');
 					add(boyfriend);
 				case 122:
-					gf.alpha = 1;
 					remove(boyfriend);
 					boyfriend = new Boyfriend(2020, 450, 'bf');
 					add(boyfriend);
