@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GF_ass_sets_text.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF_textbox instance 10000" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10001" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10002" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10003" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10004" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10005" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10006" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10007" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10008" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10009" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10010" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10011" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10012" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10013" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10014" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10015" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10016" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10017" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10018" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10019" x="0" y="0" width="809" height="812"/>
+	<SubTexture name="GF_textbox instance 10020" x="0" y="0" width="809" height="812"/>
+</TextureAtlas>
