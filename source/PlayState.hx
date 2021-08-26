@@ -82,6 +82,7 @@ class PlayState extends MusicBeatState
 	public static var loadRep:Bool = false;
 
 	public static var noteBools:Array<Bool> = [false, false, false, false];
+
 	public var shakingNotes:Bool = false;
 
 	var halloweenLevel:Bool = false;
@@ -122,6 +123,7 @@ class PlayState extends MusicBeatState
 	var gfimpact:FlxSprite;
 	var background5:FlxSprite;
 	var clouds2:FlxSprite;
+
 	public var gfSpeak:FlxSprite;
 
 	private var notes:FlxTypedGroup<Note>;
@@ -1812,10 +1814,10 @@ class PlayState extends MusicBeatState
 		{
 			var currentBeat = (Conductor.songPosition / 1000) * (SONG.bpm / 60);
 			for (i in 0...8)
-				{
-					strumLineNotes.members[i].x = strumLineNotes.members[i].x + 8 * Math.sin((currentBeat + i * 0.25) * Math.PI);
-					strumLineNotes.members[i].y = strumLineNotes.members[i].y + 8 * Math.cos((currentBeat + i * 0.25) * Math.PI);
-				}
+			{
+				strumLineNotes.members[i].x = strumLineNotes.members[i].x + 8 * Math.sin((currentBeat + i * 0.25) * Math.PI);
+				strumLineNotes.members[i].y = strumLineNotes.members[i].y + 8 * Math.cos((currentBeat + i * 0.25) * Math.PI);
+			}
 		}
 
 		if (FlxG.keys.justPressed.NINE)
@@ -4385,12 +4387,6 @@ class PlayState extends MusicBeatState
 					FlxTween.tween(dad, {alpha: 0}, 0.00000000000000000000001);
 				case 123:
 					FlxTween.tween(dad, {alpha: 1}, 10);
-				case 576:
-					openSubState(new Part1EndSubstate());
-					canPause = false;
-					boyfriend.visible = false;
-				case 655:
-					boyfriend.visible = true;
 			}
 	}
 
